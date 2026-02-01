@@ -1,1 +1,1 @@
-# aiwidgetdaily.github.io
+# AI Widget Daily
