@@ -3,38 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Widget Daily — Legal</title>
-  <meta name="description" content="Legal information for AI Widget Daily." />
+  <title>AI Widget Daily — Privacy Policy</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
       background-color: #f9f9f9;
       color: #333;
       margin: 0;
-      padding: 40px 20px;
+      padding: 24px 16px;
     }
+
     .container {
-      max-width: 760px;
+      max-width: 920px;
       margin: 0 auto;
-      background: #fff;
-      padding: 34px;
+      background: #ffffff;
+      padding: 18px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
-    /* NEW */
+    h1 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
     .nav {
       display: flex;
-      gap: 10px;
-      margin-bottom: 18px;
+      gap: 8px;
       flex-wrap: wrap;
+      margin-bottom: 12px;
     }
 
     .nav a {
       display: inline-block;
-      padding: 10px 14px;
-      background: #f2f2f2;
+      padding: 10px 12px;
       border-radius: 10px;
+      background: #f2f2f2;
       text-decoration: none;
       color: #000;
       font-weight: 600;
@@ -45,62 +50,46 @@
       background: #e6e6e6;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .links {
-      margin-top: 18px;
-      display: grid;
-      gap: 12px;
-    }
-
-    .links a {
-      display: block;
-      padding: 14px 16px;
-      background: #f2f2f2;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-    }
-
-    .links a:hover {
-      background: #e6e6e6;
-    }
-
-    footer {
-      margin-top: 24px;
+    .note {
       font-size: 13px;
-      color: #777;
+      color: #666;
+      margin: 8px 0 14px;
+      line-height: 1.5;
+    }
+
+    iframe {
+      width: 100%;
+      height: 75vh;
+      border: 0;
+      border-radius: 10px;
+      background: #ffffff;
     }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <!-- NEW NAV -->
+    <!-- Navigation -->
     <div class="nav">
       <a href="/">Home</a>
+      <a href="/legal/">Legal</a>
       <a href="/support/">Support</a>
+      <a href="/legal/privacy-policy.pdf" target="_blank" rel="noopener">Open PDF</a>
     </div>
 
-    <h1>Legal</h1>
-    <p>Privacy Policy and Terms of Service for AI Widget Daily.</p>
+    <h1>Privacy Policy</h1>
 
-    <div class="links">
-      <a href="/legal/privacy-policy.html">Privacy Policy (HTML)</a>
-      <a href="/legal/terms-of-service.html">Terms of Service (HTML)</a>
-      <a href="/legal/privacy-policy.pdf" target="_blank" rel="noopener">Privacy Policy (PDF)</a>
-      <a href="/legal/terms-of-service.pdf" target="_blank" rel="noopener">Terms of Service (PDF)</a>
+    <div class="note">
+      Questions? Contact
+      <a href="mailto:aiwidgetdaily@gmail.com">aiwidgetdaily@gmail.com</a><br />
+      Last updated: February 2026
     </div>
 
-    <footer>Last updated: February 2026</footer>
+    <iframe
+      src="/legal/privacy-policy.pdf"
+      title="Privacy Policy PDF">
+    </iframe>
+
   </div>
 </body>
 </html>
