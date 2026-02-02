@@ -6,32 +6,37 @@
   <title>AI Widget Daily — Privacy Policy</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
       background-color: #f9f9f9;
       color: #333;
       margin: 0;
       padding: 24px 16px;
     }
+
     .container {
       max-width: 920px;
       margin: 0 auto;
-      background: #fff;
+      background: #ffffff;
       padding: 18px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
-    h1 { margin: 0 0 8px; font-size: 22px; }
-    .top {
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .nav {
       display: flex;
-      justify-content: space-between;
-      gap: 12px;
+      gap: 8px;
       flex-wrap: wrap;
-      align-items: center;
       margin-bottom: 12px;
     }
-    .btns a {
+
+    .nav a {
       display: inline-block;
-      margin-right: 8px;
       padding: 10px 12px;
       border-radius: 10px;
       background: #f2f2f2;
@@ -40,39 +45,51 @@
       font-weight: 600;
       font-size: 14px;
     }
-    .btns a:hover { background: #e6e6e6; }
+
+    .nav a:hover {
+      background: #e6e6e6;
+    }
+
     .note {
       font-size: 13px;
       color: #666;
       margin: 8px 0 14px;
       line-height: 1.5;
     }
+
     iframe {
       width: 100%;
       height: 75vh;
       border: 0;
       border-radius: 10px;
-      background: #fff;
+      background: #ffffff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="top">
-      <h1>Privacy Policy</h1>
-      <div class="btns">
-        <a href="/legal/">Back</a>
-        <a href="/support/">Support</a>
-        <a href="/legal/privacy-policy.pdf" target="_blank" rel="noopener">Open PDF</a>
-      </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="/">Home</a>
+      <a href="/legal/">Legal</a>
+      <a href="/support/">Support</a>
+      <a href="/legal/privacy-policy.pdf" target="_blank" rel="noopener">Open PDF</a>
     </div>
+
+    <h1>Privacy Policy</h1>
 
     <div class="note">
-      Questions? Contact <a href="mailto:aiwidgetdaily@gmail.com">aiwidgetdaily@gmail.com</a>.
-      <br />Last updated: February 2026
+      Questions? Contact
+      <a href="mailto:aiwidgetdaily@gmail.com">aiwidgetdaily@gmail.com</a><br />
+      Last updated: February 2026
     </div>
 
-    <iframe src="/legal/privacy-policy.pdf" title="Privacy Policy PDF"></iframe>
+    <iframe
+      src="/legal/privacy-policy.pdf"
+      title="Privacy Policy PDF">
+    </iframe>
+
   </div>
 </body>
 </html>
