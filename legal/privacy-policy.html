@@ -64,6 +64,87 @@
       border-radius: 10px;
       background: #ffffff;
     }
+
+    /* Mobile content styles */
+    .mobile-content {
+      display: none;
+    }
+
+    .mobile-content h2 {
+      color: #1e3a5f;
+      font-size: 18px;
+      margin: 24px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mobile-content h2:first-child {
+      margin-top: 8px;
+    }
+
+    .mobile-content h3 {
+      color: #1e3a5f;
+      font-size: 15px;
+      margin: 16px 0 8px;
+    }
+
+    .mobile-content p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0 0 12px;
+    }
+
+    .mobile-content ul {
+      margin: 0 0 12px;
+      padding-left: 20px;
+    }
+
+    .mobile-content li {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    .mobile-content a {
+      color: #1e3a5f;
+    }
+
+    /* Mobile: hide iframe, show native content */
+    @media (max-width: 768px) {
+      body {
+        padding: 16px 12px;
+      }
+
+      .container {
+        padding: 14px;
+      }
+
+      iframe {
+        display: none;
+      }
+
+      .mobile-content {
+        display: block;
+      }
+
+      .nav a {
+        padding: 12px 14px;
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .mobile-content h2 {
+        font-size: 19px;
+      }
+
+      .mobile-content p,
+      .mobile-content li {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -85,10 +166,135 @@
       Last updated: February 2026
     </div>
 
+    <!-- Desktop: PDF iframe -->
     <iframe
       src="/legal/privacy-policy.pdf"
       title="Privacy Policy PDF">
     </iframe>
+
+    <!-- Mobile: Native HTML content -->
+    <div class="mobile-content">
+
+      <h2>1. Overview</h2>
+      <p>AI Widget Daily is an iOS application that generates AI-powered daily text content which can be displayed on iOS home screen and lock screen widgets.</p>
+      <p>The App:</p>
+      <ul>
+        <li>Does not require user-created accounts</li>
+        <li>Does not collect names, email addresses, or contact details</li>
+        <li>Does not display advertisements</li>
+        <li>Does not track users across apps or websites</li>
+      </ul>
+
+      <h2>2. App-Specific Identifier</h2>
+      <p>When the App is first used, it generates an app-specific unique identifier (UUID) that is stored locally on the device. This identifier:</p>
+      <ul>
+        <li>Is not linked to your real-world identity</li>
+        <li>Is not associated with your Apple ID</li>
+        <li>Is not shared in raw form with third parties</li>
+        <li>Exists solely to associate app-generated content and usage limits with a device</li>
+      </ul>
+      <p>The identifier is used to support features such as topic management, content generation limits, and subscriptions.</p>
+
+      <h2>3. Information We Collect</h2>
+      <h3>Usage and Diagnostic Information</h3>
+      <p>We collect limited, non-personal information to operate and improve the App, including:</p>
+      <ul>
+        <li>App launches</li>
+        <li>Feature usage</li>
+        <li>Widget refresh activity</li>
+        <li>Content generation requests</li>
+        <li>Error and crash diagnostics</li>
+      </ul>
+      <p>For analytics purposes, the device identifier is hashed before being stored or processed. We cannot reverse this hash to identify individual users.</p>
+
+      <h2>4. AI Content Generation</h2>
+      <p>The App allows users to define topics and prompts for AI-generated daily content. To provide this functionality:</p>
+      <ul>
+        <li>Topic prompts and configuration details are sent to AI processing services</li>
+        <li>No personal identifiers (such as name, email, or contact details) are included in these requests</li>
+        <li>Generated content is stored only to support app functionality (daily display, widgets, and regeneration)</li>
+      </ul>
+
+      <h2>5. Third-Party Services</h2>
+      <p>AI Widget Daily uses the following third-party services strictly to provide core app functionality:</p>
+
+      <h3>Sentry (Crash Reporting and Diagnostics)</h3>
+      <p>We use Sentry to monitor app stability and diagnose technical issues. Sentry may process:</p>
+      <ul>
+        <li>Device type</li>
+        <li>Operating system version</li>
+        <li>App version</li>
+        <li>Error logs and stack traces</li>
+      </ul>
+      <p>This information is used exclusively for debugging and improving reliability.</p>
+
+      <h3>OpenAI (AI Content Processing)</h3>
+      <p>We use OpenAI's API to generate text content:</p>
+      <ul>
+        <li>Topic prompts and configuration data are sent to OpenAI's servers for processing</li>
+        <li>No personally identifiable information is included</li>
+        <li>OpenAI processes data in accordance with its own privacy policies</li>
+      </ul>
+
+      <h3>Tavily (Search for Updates Content)</h3>
+      <p>For certain topic types that require real-time information (such as news or weather updates), the App uses Tavily's search API:</p>
+      <ul>
+        <li>Search queries related to content generation are sent to Tavily</li>
+        <li>No personally identifiable information is included in these requests</li>
+      </ul>
+
+      <h2>6. What We Do NOT Collect</h2>
+      <p>We do not collect:</p>
+      <ul>
+        <li>Names or usernames</li>
+        <li>Email addresses</li>
+        <li>Phone numbers</li>
+        <li>Contact lists</li>
+        <li>Precise location data</li>
+        <li>Advertising identifiers</li>
+        <li>Cross-app or cross-site tracking data</li>
+      </ul>
+      <p>The App does not support social features, messaging, or user profiles.</p>
+
+      <h2>7. How We Use Information</h2>
+      <p>Information collected by the App is used only to:</p>
+      <ul>
+        <li>Operate and maintain the App</li>
+        <li>Generate and display AI-powered content</li>
+        <li>Enforce usage limits and subscriptions</li>
+        <li>Improve performance, reliability, and user experience</li>
+        <li>Detect and resolve technical issues</li>
+      </ul>
+      <p>We do not use data for advertising, profiling, or marketing purposes.</p>
+
+      <h2>8. Data Sharing</h2>
+      <p>We do not sell personal data.</p>
+      <p>Anonymous or non-identifiable data may be processed by trusted third-party providers (such as Sentry, OpenAI, and Tavily) solely to deliver the App's functionality as described in this policy.</p>
+
+      <h2>9. Data Retention</h2>
+      <p>Analytics and diagnostic data is retained only for as long as necessary to:</p>
+      <ul>
+        <li>Operate the App</li>
+        <li>Monitor performance</li>
+        <li>Comply with legal and operational requirements</li>
+      </ul>
+      <p>Data is periodically deleted, aggregated, or anonymized.</p>
+
+      <h2>10. User Rights</h2>
+      <p>Because the App does not collect personally identifiable information or maintain personal user accounts, there is no personal profile associated with individual users.</p>
+      <p>If you have questions about data handling or wish to request deletion of analytics data associated with your device identifier, you may contact us using the email address below.</p>
+
+      <h2>11. Children's Privacy</h2>
+      <p>AI Widget Daily does not knowingly collect personal data from children under the age of 13. If you believe that a child has provided personal information, please contact us and we will take appropriate action.</p>
+
+      <h2>12. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last updated" date above. Continued use of the App indicates acceptance of the updated policy.</p>
+
+      <h2>13. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+      <p><a href="mailto:aiwidgetdaily@gmail.com">aiwidgetdaily@gmail.com</a></p>
+
+    </div>
 
   </div>
 </body>
